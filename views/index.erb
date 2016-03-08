@@ -7,9 +7,9 @@
     </div>
     <div class="col-sm-9">
       <table class="table">
-        <tr><th>Source</th><th>Title</th><th>Date</th></tr>
+        <tr><th>Save</th><th>Title</th><th>Date</th></tr>
         <% feed.entries.each do |entry| %>
-          <tr><td></td><td><%= entry.title %></td><td></td></tr>
+          <tr><td><a href=""><span class="glyphicon glyphicon-star-empty"></span></a></td><td><%= entry.title %></td><td><%= entry.updated.strftime("%D") %></td></tr>
         <% end %>
       </table>
     </div>
