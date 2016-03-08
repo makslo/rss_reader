@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Reader</h3>
+      <p><b>Subscriptions</b></p>
+      <p><%= feed.title %></p>
+    </div>
+    <div class="col-sm-9">
+      <table class="table">
+        <tr><th>Source</th><th>Title</th><th>Date</th></tr>
+        <% feed.entries.each do |entry| %>
+          <tr><td></td><td><%= entry.title %></td><td></td></tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>
